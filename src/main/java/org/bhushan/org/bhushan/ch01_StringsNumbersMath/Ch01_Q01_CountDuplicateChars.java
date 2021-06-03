@@ -5,6 +5,6 @@ package org.bhushan.org.bhushan.ch01_StringsNumbersMath;
  */
 public class Ch01_Q01_CountDuplicateChars {
     public static long countDuplicateCharacters(String str) {
-        return str.length() - str.chars().distinct().count();
+        return str.length() - str.codePoints().distinct().count();
     }
 }
