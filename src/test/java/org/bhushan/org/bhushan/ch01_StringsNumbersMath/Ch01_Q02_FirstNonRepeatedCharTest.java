@@ -31,4 +31,12 @@ class Ch01_Q02_FirstNonRepeatedCharTest {
         var actual = Ch01_Q02_FirstNonRepeatedChar.findFirstNonRepeatedChar(str);
         assertEquals(expected, actual);
     }
+
+    @Test
+    void findFirstNonRepeatedChar_test4() {
+        var str = "dccbba";
+        var expected = Optional.of('d');
+        var actual = Ch01_Q02_FirstNonRepeatedChar.findFirstNonRepeatedChar(str);
+        assertEquals(expected, actual);
+    }
 }
