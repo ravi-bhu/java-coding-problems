@@ -1,18 +1,18 @@
-package org.bhushan.org.bhushan.ch01_StringsNumbersMath;
+package org.bhushan.org.bhushan.ch01_StringsNumbersMath.imperative;
 
 import org.junit.jupiter.api.Test;
 
 import java.util.Optional;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class Ch01_Q02_FirstNonRepeatedCharTest {
+class Q02_FirstNonRepeatedCharTest {
 
     @Test
     void findFirstNonRepeatedChar_test1() {
         var str = "abcdcba";
         var expected = Optional.of('d');
-        var actual = Ch01_Q02_FirstNonRepeatedChar.findFirstNonRepeatedChar(str);
+        var actual = Q02_FirstNonRepeatedChar.findFirstNonRepeatedChar_imperative(str);
         assertEquals(expected, actual);
     }
 
@@ -20,7 +20,7 @@ class Ch01_Q02_FirstNonRepeatedCharTest {
     void findFirstNonRepeatedChar_test2() {
         var str = "aaaaaaaaa";
         var expected = Optional.empty();
-        var actual = Ch01_Q02_FirstNonRepeatedChar.findFirstNonRepeatedChar(str);
+        var actual = Q02_FirstNonRepeatedChar.findFirstNonRepeatedChar_imperative(str);
         assertEquals(expected, actual);
     }
 
@@ -28,7 +28,7 @@ class Ch01_Q02_FirstNonRepeatedCharTest {
     void findFirstNonRepeatedChar_test3() {
         var str = "abcdef";
         var expected = Optional.of('a');
-        var actual = Ch01_Q02_FirstNonRepeatedChar.findFirstNonRepeatedChar(str);
+        var actual = Q02_FirstNonRepeatedChar.findFirstNonRepeatedChar_imperative(str);
         assertEquals(expected, actual);
     }
 
@@ -36,7 +36,7 @@ class Ch01_Q02_FirstNonRepeatedCharTest {
     void findFirstNonRepeatedChar_test4() {
         var str = "dccbba";
         var expected = Optional.of('d');
-        var actual = Ch01_Q02_FirstNonRepeatedChar.findFirstNonRepeatedChar(str);
+        var actual = Q02_FirstNonRepeatedChar.findFirstNonRepeatedChar_imperative(str);
         assertEquals(expected, actual);
     }
 }

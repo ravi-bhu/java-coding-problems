@@ -1,4 +1,4 @@
-package org.bhushan.org.bhushan.ch01_StringsNumbersMath;
+package org.bhushan.org.bhushan.ch01_StringsNumbersMath.imperative;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -7,8 +7,8 @@ import java.util.Optional;
 /**
  * Write a program that returns the first non-repeated character from a given string
  */
-public class Ch01_Q02_FirstNonRepeatedChar {
-    public static Optional<Character> findFirstNonRepeatedChar(String str) {
+public class Q02_FirstNonRepeatedChar {
+    public static Optional<Character> findFirstNonRepeatedChar_imperative(String str) {
         Map<Character, Integer> characterCount = new LinkedHashMap<>();
         for (int i = 0; i < str.length(); i++) {
             Character c = str.charAt(i);
